@@ -23,7 +23,6 @@ usersRouter.post('/', async (req, res) => {
     password,
   });
 
-  delete user.password;
   return res.json(user);
 });
 
@@ -38,8 +37,6 @@ usersRouter.patch(
       user_id: req.user.id,
       avatarFilename: req.file.filename,
     });
-
-    delete user.password;
 
     return res.json(user);
   },
