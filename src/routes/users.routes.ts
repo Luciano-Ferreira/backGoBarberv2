@@ -10,7 +10,7 @@ import ensureAuthenticated from '../middlewares/ensureAuthenticated';
 const usersRouter = Router();
 const upload = multer(uploadConfig);
 
-usersRouter.use(ensureAuthenticated);
+// usersRouter.use(ensureAuthenticated);
 
 usersRouter.post('/', async (req, res) => {
   const { name, email, password } = req.body;
