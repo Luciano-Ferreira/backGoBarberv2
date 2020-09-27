@@ -1,7 +1,7 @@
 # back-end-GoBarber-v2
 
 
-## Foi redirecionado alguns arquivos para a nova arquitetura de sistema tornando-se um projeto mais escalável
+- Foi redirecionado alguns arquivos para a nova arquitetura de sistema tornando-se um projeto mais escalável
 
 
 
