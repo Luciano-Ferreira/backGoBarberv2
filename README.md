@@ -18,3 +18,15 @@ Ah e os arquivos da pasta models foram movidos para pasta entities
 - Dentro da pasta shared estão as pastas database, errors, middlewares e routes.
 
 <img src="github/shared.png" alt="models">
+
+
+## Camadas de domínio e camada de infra
+
+### Infra: decisões tecnicas.
+  src/shared/infra
+  ferramentas, frameworks, stack e etc.
+
+
+### Domínio: decisões de regras de negócio.
+  o que o nosso Cliente/Usuário precisa.
+
