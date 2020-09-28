@@ -109,7 +109,7 @@ dentro dessa interface:
 <br />
 <img src="github/IAppointmentsRepositoryCode.png" alt="IAppointmentsRepository">
 
-e repository que está dentro de typeorm eu importo essa interface e a implemento, a e tambem alterei o retorno que antes era Appointment ou null, agora está Appointment ou undefined.
+e repository que está dentro de typeorm eu importo essa interface e a implemento, também alterei o retorno que antes era Appointment ou null, agora está Appointment ou undefined.
 
 <img src="github/AppointmentRepositoryCode.png" alt="IAppointmentsRepositoryCode">
 
