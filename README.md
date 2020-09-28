@@ -101,10 +101,12 @@ mkdir src/modules/appointments/repositories
 touch src/modules/appointments/repositories/IAppointmentsRepository.ts
 
  a estrutura de pastas ficou assim:
+ <br />
 <img src="github/epIAppointmentsRepository.png" alt="EPIAppointmentsRepository">
 
 
 dentro dessa interface:
+<br />
 <img src="github/IAppointmentsRepositoryCode.png" alt="IAppointmentsRepository">
 
 e repository que está dentro de typeorm eu importo essa interface e a implemento, a e tambem alterei o retorno que antes era Appointment ou null, agora está Appointment ou undefined.
