@@ -109,7 +109,7 @@ dentro dessa interface:
 
 e repository que está dentro de typeorm eu importo essa interface e a implemento, a e tambem alterei o retorno que antes era Appointment ou null, agora está Appointment ou undefined.
 
-<img src="github/AppointmentsRepositoryCode.png" alt="IAppointmentsRepository">
+<img src="github/AppointmentRepositoryCode.png" alt="IAppointmentsRepositoryCode">
 
 o que foi intendido aqui é que isolamos a nossa entidade para facilitar uma troca de banco se necessario, no futuro.
 
