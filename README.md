@@ -80,7 +80,7 @@ o node não intende as importações com a @ como o VSCode é necessario instala
 e no inicio do comando dev:server colocar uma flag -r tsconfig-paths/register
 
 
-## Liskov Substitution Principle
+# Liskov Substitution Principle
 Nesse momento isolei um pouco mais a camada de appointments da aplicação, ela ainda tinha uma importação do typeorm. E para facilitar na manutenibilidade do código temos que isolar com uma interface.  Sendo assim criamos uma interface em src/modules/appointments/repositories/IAppointments.
 
 Além disso foi implementado uma nova regra eslint para criação de interfaces.
