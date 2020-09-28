@@ -116,3 +116,21 @@ e repository que está dentro de typeorm eu importo essa interface e a implement
 o que foi intendido aqui é que isolamos a nossa entidade para facilitar uma troca de banco se necessario, no futuro.
 
 
+## Rewriting repository
+
+Começamos a desacoplar as regras de negócios da parte de infra. em services o arquivo presente ainda utiliza metodos do typeorm.
+
+refatoramos bastante o nosso repositório, prefiro mostrar a ilustração do que mudou pra facilitar o entendimento:
+<br />
+<img src="github/refactoringRepository.png" alt="Refactoring Repository">
+
+
+mkdir src/modules/appointments/dtos
+touch src/modules/appointments/dtos/ICreateAppointmentDTO.ts
+<img src="github/codeICreateAppointmentDTO.png" alt="InterfaceRequest">
+
+
+
+isolei a interface que tipava o parametro do método execute() na classe CreateAppointmentService e removi a interface que estava acima, em services.
+<img src="github/usingCodeICreateAppointmentDTO.png" alt="usingInterface">
+
