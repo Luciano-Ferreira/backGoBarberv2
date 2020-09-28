@@ -38,10 +38,6 @@ Ah e os arquivos da pasta models foram movidos para pasta entities
   rename shared/infra/database shared/infra/typeorm
 
 
-
-
-
-
 ### Domínio: decisões de regras de negócio.
   o que o nosso Cliente/Usuário precisa.
 
@@ -82,3 +78,39 @@ trocar o endereço do arquivo de inicialização la no package.json no fim do co
 o node não intende as importações com a @ como o VSCode é necessario instalar a lib tsconfig-paths -D
 
 e no inicio do comando dev:server colocar uma flag -r tsconfig-paths/register
+
+
+## Liskov Substitution Principle
+Nesse momento isolei um pouco mais a camada de appointments da aplicação, ela ainda tinha uma importação do typeorm. E para facilitar na manutenibilidade do código temos que isolar com uma interface.  Sendo assim criamos uma interface em src/modules/appointments/repositories/IAppointments.
+
+Além disso foi implementado uma nova regra eslint para criação de interfaces.
+
+
+<img src="github/interfaceNamePrefix.png" alt="Interface Name Prefix">
+
+essa regra nos obriga a colocar um I em todas as interfaces do projeto.
+
+<a href="https://github.com/typescript-eslint/typescript-eslint/issues/1915">[interface-name-prefix]</a>
+
+
+dentro de infra coloquei a pasta repositories dentro de typeorm
+
+e criei a interface no modulo de agendamentos
+
+mkdir src/modules/appointments/repositories
+touch src/modules/appointments/repositories/IAppointmentsRepository.ts
+
+ a estrutura de pastas ficou assim:
+<img src="github/epIappointmentsRepository.png" alt="EPIAppointmentsRepository">
+
+
+dentro dessa interface:
+<img src="github/IappointmentsRepositoryCode.png" alt="IAppointmentsRepository">
+
+e repository que está dentro de typeorm eu importo essa interface e a implemento, a e tambem alterei o retorno que antes era Appointment ou null, agora está Appointment ou undefined.
+
+<img src="github/AppointmentsRepositoryCode.png" alt="IAppointmentsRepository">
+
+o que foi intendido aqui é que isolamos a nossa entidade para facilitar uma troca de banco se necessario, no futuro.
+
+
