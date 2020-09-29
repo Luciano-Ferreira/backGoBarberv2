@@ -3,8 +3,6 @@
 
 - Foi redirecionado alguns arquivos para a nova arquitetura de sistema tornando-se um projeto mais escalável
 
-
-
 - Dentro de src foi refatorado/movido as pastas database, models, services, repositories, middlewares, routes, e em breve será movido o arquivo server.ts
 
 - Foram criados novos diretorios para a refatoração modules e shared. A pasta modules possui dois subdiretorios users e appointments, dentro deles estão entities repositories e services.
@@ -159,20 +157,14 @@ ilustração das mudanças:
 
 # Refatorando módulo de usuários
 
+<a href="https://github.com/Luciano-Ferreira/Iniciando-back-end/commit/a4f01c4d44b3c2bb730615be016aa598edf980bd" target="_blank" >Mais detalhes do commit</a>
+
+Removi tudo que é diretamente relacionado com typeorm dos services como fiz anteriormente no modulo de appointments.
+
 mkdir src/users/repositories/
 touch src/modules/users/repositories/IUsersRepository.ts
-<a href="src/modules/users/repositories/IUsersRepository.ts" target="_blank" >IUsersRepository</a>
 
-
-Métodos nos services a serem refatorados no modulo users:
-<br />
-
-- findById
-- findByEmail
-- create
-- save
-
-Removemos tudo que é diretamente relacionado com typeorm dos services como fizemos anteriormente.
+Criei essa interface que irá "substituir" as querys do typeorm 
 
 
 na rota de usuário e de sessões:
@@ -185,5 +177,6 @@ na rota de usuário e de sessões:
  A aplicação ainda não vai rodar. Como trocamos toda a estrutura de pastas e arquivos incluindo as rotas, é necessario trocar os diretórios das entities, migrations, e migrationDir nas configurações do typeorm
 
  <img src="github/ormconfig.png" alt="ormconfig.json">
+
 
 
