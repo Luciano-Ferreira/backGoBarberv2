@@ -153,6 +153,35 @@ foi necessario desabilitar uma regra eslint para usar o constructor.
 foram refatorados a rota de appointments e o service de criação de appointment que um ponto que usa muito da camada de infra, porém foi decidido não isolar completamente o service, até o momento.
 
 ilustração das mudanças:
-<br />
+<br />-
 <img src="github/appointmentsRoutes.png" alt="RotaAppointment">
 <img src="github/serviceCreateAppointment.png" alt="CreateAppointmentService">
+
+# Refatorando módulo de usuários
+
+mkdir src/users/repositories/
+touch src/modules/users/repositories/IUsersRepository.ts
+
+
+Métodos nos services a serem refatorados no modulo users:
+<br />
+
+- findById
+- findByEmail
+- create
+- save
+
+Removemos tudo que é diretamente relacionado com typeorm dos services como fizemos anteriormente.
+
+
+na rota de usuário e de sessões:
+<br />
+ é necessário importar a classe UsersRepository que fica em @modules/users/infra/typeorm/repositories/UsersRepository
+
+ e criar uma variavel que a instancie essa classe, e passar essa variavel como parâmetro em CreateUserService() e UpdateUserAvatarService.
+
+ A aplicação ainda não vai rodar. Como trocamos toda a estrutura de pastas e arquivos incluindo as rotas, é necessario trocar os diretórios das entities, migrations, e migrationDir nas configurações do typeorm
+
+ <img src="github/ormconfig.png" alt="ormconfig.json">
+
+
