@@ -138,11 +138,11 @@ isolei a interface que tipava o parametro do método execute() na classe CreateA
 
 Inversão de dependência. A Letra "I" do SOLID
 
-Single Responsability Principle
-Open Closed Principle
-Liskov Substitution Principle
-Interface Segregation Principle
-Dependency Invertion Principle
+Single Responsability Principle <br />
+Open Closed Principle <br />
+Liskov Substitution Principle <br />
+Interface Segregation Principle <br />
+Dependency Invertion Principle <br />
 
 Ao invés do service lidar diretamente com o repositório importado no arquivo do service, iremos receber esse mesmo repositório como parâmetro do constructor desse service passando o tipo dele como sendo a interface criada anteriormente para implementar no próprio repositório.
 
