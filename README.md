@@ -161,6 +161,7 @@ ilustração das mudanças:
 
 mkdir src/users/repositories/
 touch src/modules/users/repositories/IUsersRepository.ts
+<a href="src/modules/users/repositories/IUsersRepository.ts" target="_blank">IUsersRepository</a>
 
 
 Métodos nos services a serem refatorados no modulo users:
