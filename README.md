@@ -134,3 +134,20 @@ touch src/modules/appointments/dtos/ICreateAppointmentDTO.ts
 isolei a interface que tipava o parametro do método execute() na classe CreateAppointmentService e removi a interface que estava acima, em services.
 <img src="github/usingCodeICreateAppointmentDTO.png" alt="usingInterface">
 
+# Dependency inversion principle
+
+inversão de dependência
+
+Ao invés do service lidar diretamente com o repositório importado no arquivo do service, iremos receber esse mesmo repositório como parâmetro do constructor desse service passando o tipo dele como sendo a interface criada anteriormente para implementar no próprio repositório.
+
+foi necessario desabilitar uma regra eslint para usar o constructor.
+"no-useless-constructor":"off",
+
+
+foram refatorados a rota de appointments e o service de criação de appointment que um ponto que usa muito da camada de infra, porém foi decidido não isolar completamente o service, até o momento.
+
+ilustração das mudanças:
+<br />
+<img src="github/appointmentsRoutes.png" alt="RotaAppointment">
+<img src="github/serviceCreateAppointment.png" alt="CreateAppointmentService">
+
