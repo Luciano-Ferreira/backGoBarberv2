@@ -172,7 +172,6 @@ na rota de usuário e de sessões:
  é necessário importar a classe UsersRepository que fica em @modules/users/infra/typeorm/repositories/UsersRepository
 
  e criar uma variavel que a instancie essa classe, e passar essa variavel como parâmetro em CreateUserService() e UpdateUserAvatarService.
- <a href="src/modules/users/services/CreateUserService.ts" target="_blank" >
 
  A aplicação ainda não vai rodar. Como trocamos toda a estrutura de pastas e arquivos incluindo as rotas, é necessario trocar os diretórios das entities, migrations, e migrationDir nas configurações do typeorm
 
