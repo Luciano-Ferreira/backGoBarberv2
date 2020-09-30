@@ -164,7 +164,7 @@ Removi tudo que é diretamente relacionado com typeorm dos services como fiz ant
 mkdir src/users/repositories/
 touch src/modules/users/repositories/IUsersRepository.ts
 
-Criei essa interface que irá "substituir" as querys do typeorm 
+Criei essa interface que irá "substituir" as querys do typeorm
 
 
 na rota de usuário e de sessões:
@@ -179,3 +179,9 @@ na rota de usuário e de sessões:
 
 
 
+## Injeção de dependência
+
+yarn add tsyringe
+mkdir src/shared/container
+
+container injeta as dependências
