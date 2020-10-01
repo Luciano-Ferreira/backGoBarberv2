@@ -10,7 +10,7 @@
 
 <img src="github/modules.png" alt="models">
 
-Ah e os arquivos da pasta models foram movidos para pasta entities
+E os arquivos da pasta models foram movidos para pasta entities
 
 
 - Dentro da pasta shared estão as pastas database, errors, middlewares e routes.
