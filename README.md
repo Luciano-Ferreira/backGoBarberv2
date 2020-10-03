@@ -185,3 +185,11 @@ yarn add tsyringe
 mkdir src/shared/container
 
 container injeta as dependências
+
+## Controllers
+
+arquitetura restfull o  controller pode ter apenas 5 métodos:
+<br />
+index,
+show,
+create,update,delete
