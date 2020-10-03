@@ -32,8 +32,6 @@ class AuthenticateUserService {
       throw new AppError('Incorrect email/password combination.', 401);
     }
 
-    console.log({ email, password });
-
     const passwordMatched = await compare(password, user.password);
 
     if (!passwordMatched) {

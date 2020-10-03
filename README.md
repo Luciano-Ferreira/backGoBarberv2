@@ -188,8 +188,12 @@ container injeta as dependências
 
 ## Controllers
 
+nos controlers vamos abstrai a lógica que estava dentro da rota.
+
 arquitetura restfull o  controller pode ter apenas 5 métodos:
 <br />
 index,
 show,
 create,update,delete
+
+
