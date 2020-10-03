@@ -196,4 +196,67 @@ index,
 show,
 create,update,delete
 
+# Testes Automatizados
+
+Garantem que a nossa aplicação continue funcionando independente do número de novas funcionalidades e do número de devs no time.
+
+1. Testes unitários (TDD)
+
+Testam funcionalidades específicas da nossa aplicação (precisam ser funções puras).
+
+JAMAIS: Chamada à uma API, e efeito colateral
+
+2. Testes de integração
+
+Testam uma funcionalidade completa, passando por várias camadas da aplicação.
+
+Route → Controller → Serviço → Repositório ...
+
+3. Teste E2E
+
+Teste que simulam a ação do usuário dentro da nossa aplicação.
+
+- 1. Clique no input de email
+- 2. Preencha luciano2023silva@gmail.com
+- 3. Clique no input de senha
+- 4. Preencha 123456
+- 5. Clique no botão "Logar"
+- 6. Espero que a página tenha enviado o usuário para o dashboard
+
+# TDD (Test Driven Development)
+
+- O usuário quando ele se cadastrar na aplicação, ele deve receber um email de boas-vindas;
+
+## Configurando Jest
+
+yarn add jest -D
+yarn add ts-jest -D
+yarn add @types/jest -D
+
+yarn jest --init
+
+✔ Would you like to use Jest when running "test" script in "package.json"? … yes
+✔ Choose the test environment that will be used for testing › node
+✔ Do you want Jest to add coverage reports? … no
+✔ Which provider should be used to instrument code for coverage? › babel
+✔ Automatically clear mock calls and instances between every test? … yes
+
+tudo que fica em env no eslintrc.json são as funções globais, e é necessario adicionar o jest para utilizar.
+
+<a href="https://www.notion.so/Configurando-Jest-a6d8bda77a164e8eb1ca831c893a3d57">Configurando Jest </a>
+
+## Pensando nos testes/Criando primeiro teste
+
+Não irei interagir com o nosso repositório original por que é muito passivo a erros, vou criar um repositório "fake".
+
+
+
+mkdir src/modules/appointments/repositories/fakes
+touch src/modules/appointments/repositories/fakes/FakeAppointmentsRepository.ts
+
+Este arquivo o código semelhante ao AppointmentRepository
+
+touch src/modules/appointments/services/CreateAppointmentService.spec.ts
+
+
 
