@@ -259,4 +259,11 @@ Este arquivo o código semelhante ao AppointmentRepository
 touch src/modules/appointments/services/CreateAppointmentService.spec.ts
 
 
+o jest não entende os nosso atalhos de diretório, '@modules/appointments...'. No arquivo jest.condig.js na linha 151 descomentei o testMatch e passei ele como:<br />
+<img src="github/testMatch.png" alt="testMatch">
 
+foi necessario setar a baseURL na linha 86 que pra isso foi necessário as variaveis pathsToModuleNameMapper de 'ts-jest/utils' e compilerOptions de 'tsconfig.json'.
+
+o javascript não entende comentário dentro do json então é necessario remover todos os comentários do tsconfig.json
+
+e enfim criamos um teste unitário.
