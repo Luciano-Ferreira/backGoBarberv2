@@ -292,3 +292,6 @@ mas mesmo assim o teste não está funcionando como deveria.
 é necessario que na nossa fakeAppointmentRepository alterar a comparação de timestamp com a função isEqual do 'date-fns'
 
 <img src="github/isEqual.png" alt="isEqual">
+
+## Testando criação de usuário
+
