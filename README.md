@@ -295,3 +295,5 @@ mas mesmo assim o teste não está funcionando como deveria.
 
 ## Testando criação de usuário
 
+## Testando Autenticação de usuario
+
