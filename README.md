@@ -267,3 +267,28 @@ foi necessario setar a baseURL na linha 86 que pra isso foi necessário as varia
 o javascript não entende comentário dentro do json então é necessario remover todos os comentários do tsconfig.json
 
 e enfim criamos um teste unitário.
+
+## Coverage report
+
+Basicamente ele entrega um relatório dos testes feitos e não feitos no projeto, a melhor resposta de onde estamos e onde precisamos chegar no nosso projeto é abrindo o arquivo coverage/lcov-report/index.html
+
+Em jest.config.js na linha 21 vamos setar o collectCoverage para true, e
+
+na linha 24 collectCoverageFrom: adiciona ['<rootDir>/src/modules/**/services/*.ts']
+
+na linha 30 coverageDirectory: 'coverage'
+
+na linha 41 coverageReporters: ["text-summary", "lcov"]
+
+No teste em que criei ainda resta uma possibilidade de teste, uma "branch" a o if que dispara um erro se o agendamento tiver com a mesma daa ou horario igual, ele dispara um erro.
+
+para criar o teste: <br />
+
+
+<img src="github/appointmenttestduplicatedappointment.png" alt="appointmenttestduplicatedappointment">
+
+mas mesmo assim o teste não está funcionando como deveria.
+
+é necessario que na nossa fakeAppointmentRepository alterar a comparação de timestamp com a função isEqual do 'date-fns'
+
+<img src="github/isEqual.png" alt="isEqual">
