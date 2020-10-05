@@ -297,3 +297,25 @@ mas mesmo assim o teste não está funcionando como deveria.
 
 ## Testando Autenticação de usuario
 
+Um teste não pode depender de outro teste, como o teste de autenticação é necessario um usuario criado na fakeUserRepository.ts. vou criar um novo usuario usando o CreateUSerService
+
+mkdir src/modules/users/providers
+mkdir src/modules/users/providers/HashProvider
+mkdir src/modules/users/providers/HashProvider/models
+mkdir src/modules/users/providers/HashProvider/implementations
+mkdir src/modules/users/providers/HashProvider/fakes
+
+
+dentro de models ficara interfaces
+
+touch src/modules/users/providers/HashProvider/models/IHashProvider.ts
+touch src/modules/users/providers/HashProvider/implementations/BCryptHashProvider.ts
+
+
+touch src/modules/users/providers/index.ts
+
+esse arquivo vai fazer as mesma coisas que o index.ts do container, porem apenas com arquivos especificos do modulo de usuário.
+
+e esse mesmo arquivo sera importado no shared/container
+
+touch src/modules/users/providers/HashProvider/fakes/FakeHashProvider.ts
