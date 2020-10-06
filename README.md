@@ -341,3 +341,11 @@ mkdir tmp/uploads
 touch src/shared/container/providers/index.ts
 
 touch src/shared/container/providers/StorageProvider/fakes/FakeStorageProvider.ts
+
+## Atualização de avatar
+
+touch src/modules/users/services/UpdateUserAvatarService.spec.ts
+
+será utilizado o metodo spyOn() do jest
+
+que pode ser utilizada para monitorar qualquer função
