@@ -319,3 +319,25 @@ esse arquivo vai fazer as mesma coisas que o index.ts do container, porem apenas
 e esse mesmo arquivo sera importado no shared/container
 
 touch src/modules/users/providers/HashProvider/fakes/FakeHashProvider.ts
+
+
+## provider storage
+
+Content Delivery Network
+
+Amazon S3 | Google Cloud Storage | DO Spaces
+
+vou isolar a responsabilidade de armazenar as imagens/avatar
+
+mkdir src/shared/container/providers
+mkdir src/shared/container/providers/StorageProvider
+mkdir src/shared/container/providers/StorageProvider/models
+mkdir src/shared/container/providers/StorageProvider/implementations
+mkdir src/shared/container/providers/StorageProvider/fakes
+touch src/shared/container/providers/StorageProvider/models/IStorageProvider.ts
+touch src/shared/container/providers/StorageProvider/implementations/DiskStorageProvider.ts
+
+mkdir tmp/uploads
+touch src/shared/container/providers/index.ts
+
+touch src/shared/container/providers/StorageProvider/fakes/FakeStorageProvider.ts
