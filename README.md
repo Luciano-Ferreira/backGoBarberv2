@@ -408,3 +408,16 @@ que pode ser utilizada para monitorar qualquer função
 - O usuário não pode agendar em um horário que já passou;
 - O usuário não pode serviços consigo mesmo;
 
+## Aplicando TDD na prática
+
+mkdir src/shared/container/providers/MailProvider
+mkdir src/shared/container/providers/MailProvider/implementations
+mkdir src/shared/container/providers/MailProvider/models
+mkdir src/shared/container/providers/MailProvider/fakes
+touch src/shared/container/providers/MailProvider/models/IMailProvider.ts
+touch src/shared/container/providers/MailProvider/fakes/FakeMailProvider.ts
+
+Primeiro vamos fazer nosso teste falhar
+RED
+GREEN
+REFACTOR
