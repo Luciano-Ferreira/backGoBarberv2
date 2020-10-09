@@ -421,3 +421,5 @@ Primeiro vamos fazer nosso teste falhar
 RED
 GREEN
 REFACTOR
+
+## Recuperação de senha
