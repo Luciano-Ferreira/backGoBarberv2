@@ -423,3 +423,13 @@ GREEN
 REFACTOR
 
 ## Recuperação de senha
+
+
+Resetar senha
+identificar usuário
+
+touch src/modules/users/infra/typeorm/entities/UserToken.ts
+
+touch src/modules/users/repositories/IUserTokensRepository.ts
+
+touch src/modules/users/repositories/fakes/FakeUserTokensRepository.ts
