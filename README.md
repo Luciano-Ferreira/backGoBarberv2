@@ -444,3 +444,7 @@ Testes que restam fazer:
 - 2h  de expiração
 - user token inexistente
 - user inexistente
+
+## Finalizando testes
+
+conceito de mock
