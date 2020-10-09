@@ -433,3 +433,14 @@ touch src/modules/users/infra/typeorm/entities/UserToken.ts
 touch src/modules/users/repositories/IUserTokensRepository.ts
 
 touch src/modules/users/repositories/fakes/FakeUserTokensRepository.ts
+
+## Reset da senha
+
+touch src/modules/users/services/ResetPasswordService.ts
+touch src/modules/users/services/ResetPasswordService.spec.ts
+
+Testes que restam fazer:
+- Hash
+- 2h  de expiração
+- user token inexistente
+- user inexistente
