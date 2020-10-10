@@ -517,3 +517,8 @@ touch src/shared/container/providers/MailProvider/dtos/ISendMailDTO.ts
 
 mkdir src/modules/users/views
 touch src/modules/users/views/forgot_password.hbs
+
+## Refatoração dos testes
+
+refatorei todos os testes com beforeEach(), evitando toda aquela repetição de criar a mesma variavel em todos os testes
+
