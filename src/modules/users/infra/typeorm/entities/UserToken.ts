@@ -9,7 +9,7 @@ import {
 
 // KISS - Keep It Simple & Stupid
 
-@Entity('usersuser_tokens')
+@Entity('user_tokens')
 class UserToken {
   @PrimaryGeneratedColumn('uuid')
   id: string;

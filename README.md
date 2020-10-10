@@ -470,3 +470,16 @@ touch src/modules/users/infra/typeorm/repositories/UserTokensRepository.ts
 ❯ yarn typeorm migration:create -n CreateUserTokens
 
 Criei uma nova tabela no banco, user_tokens
+
+## Emails em desenvolvimento
+
+Mailtrap.io
+ethereal.email by nodemailer
+
+vamos utilizar o ethereal
+
+touch src/shared/container/providers/MailProvider/implementations/EtherealMailProvider.ts
+
+yarn add nodemailer
+yarn add @types/nodemailer -D
+
