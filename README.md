@@ -512,3 +512,8 @@ yarn add handlebars
 
 mkdir src/shared/container/providers/MailProvider/dtos
 touch src/shared/container/providers/MailProvider/dtos/ISendMailDTO.ts
+
+## Template engine
+
+mkdir src/modules/users/views
+touch src/modules/users/views/forgot_password.hbs
