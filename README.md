@@ -483,3 +483,32 @@ touch src/shared/container/providers/MailProvider/implementations/EtherealMailPr
 yarn add nodemailer
 yarn add @types/nodemailer -D
 
+## template de emails
+
+mkdir src/shared/container/providers/MailTemplateProvider
+mkdir src/shared/container/providers/MailTemplateProvider/models
+mkdir src/shared/container/providers/MailTemplateProvider/fakes
+mkdir src/shared/container/providers/MailTemplateProvider/implementations
+
+touch src/shared/container/providers/MailTemplateProvider/models/IMailTemplateProvider.ts
+
+templates de email:
+https://mozilla.github.io/nunjucks/
+https://handlebarsjs.com/
+https://expressjs.com/en/resources/template-engines.html
+
+Vou utilizar o handlebars
+
+mkdir src/shared/container/providers/MailTemplateProvider/dtos
+touch src/shared/container/providers/MailTemplateProvider/dtos/IParseMailTemplateDTO.ts
+
+variables: { user: 'Luciano', link: 'https://...' }
+
+touch src/shared/container/providers/MailTemplateProvider/fakes/FakeMailTemplateProvider.ts
+
+touch src/shared/container/providers/MailTemplateProvider/implementations/HandlebarsMalTemplateProvider.ts
+
+yarn add handlebars
+
+mkdir src/shared/container/providers/MailProvider/dtos
+touch src/shared/container/providers/MailProvider/dtos/ISendMailDTO.ts
