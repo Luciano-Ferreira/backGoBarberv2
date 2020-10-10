@@ -451,8 +451,10 @@ Testes que restam fazer:
 
 1. Rotas e controllers
 2. Repositório de tokens (TypeORM)
-3. Provider de envio de E-mail (dev)
-4. Testar tudo!
+3. Criar migration de tokens
+4. Provider de envio de E-mail (dev)
+5. Registrar providers no container
+6. Testar tudo!
 
 touch src/modules/users/infra/http/routes/password.routes.ts
 
@@ -465,3 +467,6 @@ touch src/modules/users/infra/http/controllers/ResetPasswordController.ts
 
 touch src/modules/users/infra/typeorm/repositories/UserTokensRepository.ts
 
+❯ yarn typeorm migration:create -n CreateUserTokens
+
+Criei uma nova tabela no banco, user_tokens
