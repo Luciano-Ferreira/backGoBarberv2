@@ -522,3 +522,7 @@ touch src/modules/users/views/forgot_password.hbs
 
 refatorei todos os testes com beforeEach(), evitando toda aquela repetição de criar a mesma variavel em todos os testes
 
+## Atualização do perfil
+
+touch src/modules/users/services/UpdateProfileService.ts
+touch src/modules/users/services/UpdateProfileService.spec.ts
