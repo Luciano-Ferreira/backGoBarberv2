@@ -447,4 +447,21 @@ Testes que restam fazer:
 
 ## Finalizando testes
 
-conceito de mock
+## Salvando tokens no banco
+
+1. Rotas e controllers
+2. Repositório de tokens (TypeORM)
+3. Provider de envio de E-mail (dev)
+4. Testar tudo!
+
+touch src/modules/users/infra/http/routes/password.routes.ts
+
+Controllers:
+index, show, create, update, delete
+
+touch src/modules/users/infra/http/controllers/ForgotPasswordController.ts
+
+touch src/modules/users/infra/http/controllers/ResetPasswordController.ts
+
+touch src/modules/users/infra/typeorm/repositories/UserTokensRepository.ts
+
