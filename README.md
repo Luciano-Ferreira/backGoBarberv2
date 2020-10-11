@@ -534,3 +534,14 @@ touch src/modules/users/infra/http/controllers/ProfileController.ts
 touch src/modules/users/infra/http/routes/profile.routes.ts
 touch src/modules/users/services/ShowProfileService.ts
 touch src/modules/users/services/ShowProfileService.spec.ts
+
+# Agendamento
+
+## Listagem de prestadores
+
+touch src/modules/appointments/services/ListProvidersService.ts
+foi criado um novo método no repositório de usuários findAllProviders()
+
+
+touch src/modules/users/dtos/IFindAllProvidersDTO.ts
+touch src/modules/appointments/services/ListProvidersService.spec.ts
