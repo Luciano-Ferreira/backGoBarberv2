@@ -594,3 +594,6 @@ vou criar o dto
 touch src/modules/appointments/dtos/IFindAllInDayFromProviderDTO.ts
 
 vou cria o método em FakeAppointmentsRepository.ts
+
+## Excluindo horários antigos
+
