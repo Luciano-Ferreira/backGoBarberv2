@@ -567,3 +567,14 @@ touch src/modules/appointments/infra/http/controllers/ProvidersController.ts
 
 touch src/modules/appointments/infra/http/routes/providers.routes.ts
 
+## Filtrando agendamento por mês
+
+touch src/modules/appointments/services/ListProviderMonthAvailabilityService.ts
+
+touch src/modules/appointments/services/ListProviderMonthAvailabilityService.spec.ts
+
+em IApponintmentsRepository foi criado o método findAllInMonthFromProvider()
+
+touch src/modules/appointments/dtos/IFindAllInMonthFromProviderDTO.ts
+
+Brasil UTC-3 (UTC)
