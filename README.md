@@ -579,5 +579,10 @@ touch src/modules/appointments/dtos/IFindAllInMonthFromProviderDTO.ts
 
 Brasil UTC-3 (UTC)
 
-## Listando dias disponiveis
+## Listando dias disponíveis
 
+## Listando horários disponíveis
+
+touch src/modules/appointments/services/ListProviderDayAvailabilityService.ts
+
+touch src/modules/appointments/services/ListProviderDayAvailabilityService.spec.ts
