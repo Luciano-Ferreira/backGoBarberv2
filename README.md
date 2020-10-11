@@ -586,3 +586,11 @@ Brasil UTC-3 (UTC)
 touch src/modules/appointments/services/ListProviderDayAvailabilityService.ts
 
 touch src/modules/appointments/services/ListProviderDayAvailabilityService.spec.ts
+
+vou criar um novo método no repositories finAllInDayFromProvider
+
+vou criar o dto
+
+touch src/modules/appointments/dtos/IFindAllInDayFromProviderDTO.ts
+
+vou cria o método em FakeAppointmentsRepository.ts
