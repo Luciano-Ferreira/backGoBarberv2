@@ -578,3 +578,6 @@ em IApponintmentsRepository foi criado o método findAllInMonthFromProvider()
 touch src/modules/appointments/dtos/IFindAllInMonthFromProviderDTO.ts
 
 Brasil UTC-3 (UTC)
+
+## Listando dias disponiveis
+
