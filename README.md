@@ -526,3 +526,11 @@ refatorei todos os testes com beforeEach(), evitando toda aquela repetição de 
 
 touch src/modules/users/services/UpdateProfileService.ts
 touch src/modules/users/services/UpdateProfileService.spec.ts
+
+
+## Rota e controller de perfil
+
+touch src/modules/users/infra/http/controllers/ProfileController.ts
+touch src/modules/users/infra/http/routes/profile.routes.ts
+touch src/modules/users/services/ShowProfileService.ts
+touch src/modules/users/services/ShowProfileService.spec.ts
