@@ -633,4 +633,9 @@ touch src/modules/appointments/infra/http/controllers/ProvidersController.ts
 
 touch src/modules/appointments/infra/http/routes/providers.routes.ts
 
-## regras do agendamento
+## Rotas e controllers
+
+
+touch src/modules/appointments/infra/http/controllers/ProviderMonthAvailabilityController.ts
+
+touch src/modules/appointments/infra/http/controllers/ProviderDayAvailabilityController.ts
