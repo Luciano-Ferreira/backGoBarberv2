@@ -13,12 +13,6 @@ const providerDayAvailabilityController = new ProviderDayAvailabilityController(
 
 ProvidersRouter.use(ensureAuthenticated);
 
-// ProvidersRouter.get('/', async (req, res) => {
-//   const appointments = await appointmentsRepository.find();
-//
-//   return res.json(appointments);
-// });
-
 ProvidersRouter.get('/', providersController.index);
 ProvidersRouter.get(
   '/:provider_id/month-availability',
