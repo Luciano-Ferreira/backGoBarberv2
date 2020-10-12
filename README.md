@@ -597,3 +597,8 @@ vou cria o método em FakeAppointmentsRepository.ts
 
 ## Excluindo horários antigos
 
+## Criação de agendamento
+
+❯ yarn typeorm migration:create -n AddUserIdToAppointments
+
+yarn jest --clearCache
