@@ -688,3 +688,9 @@ touch src/modules/notifications/infra/typeorm/repositories/NotificationsReposito
 
 ## Enviando notificações
 
+## Refatorando testes
+
+mkdir src/modules/notifications/repositories/fakes/
+touch src/modules/notifications/repositories/fakes/FakeNotificationRepository.ts
+
+
