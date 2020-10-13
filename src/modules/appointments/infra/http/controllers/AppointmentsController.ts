@@ -6,7 +6,7 @@ import CreateAppointmentsService from '@modules/appointments/services/CreateAppo
 
 export default class AppointmentsController {
   public async create(request: Request, response: Response): Promise<Response> {
-    const user_id = request.user.id;
+    const user_id = request.params.id;
     const { provider_id, date } = request.body;
 
     const parsedDate = parseISO(date);

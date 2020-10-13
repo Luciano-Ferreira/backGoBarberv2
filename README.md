@@ -639,3 +639,13 @@ touch src/modules/appointments/infra/http/routes/providers.routes.ts
 touch src/modules/appointments/infra/http/controllers/ProviderMonthAvailabilityController.ts
 
 touch src/modules/appointments/infra/http/controllers/ProviderDayAvailabilityController.ts
+
+
+# Finalizando back-end do app
+
+## Prestador de serviços
+
+touch src/modules/appointments/services/ListProviderAppointmentsService.ts
+touch src/modules/appointments/services/ListProviderAppointmentsService.spec.ts
+
+touch src/modules/appointments/infra/http/controllers/ProviderAppointmentsController.ts
