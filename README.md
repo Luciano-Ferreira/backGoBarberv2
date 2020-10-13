@@ -649,3 +649,39 @@ touch src/modules/appointments/services/ListProviderAppointmentsService.ts
 touch src/modules/appointments/services/ListProviderAppointmentsService.spec.ts
 
 touch src/modules/appointments/infra/http/controllers/ProviderAppointmentsController.ts
+
+## Configurando MongoDB
+
+Aqui só instalei um program que visualize o banco em mongoDB
+robo3t ou mongodbcompass
+instalei o robo3t
+
+## Estrutura de notificações
+
+Foi apresentado o mogoose que faz o papel do typeorm para o mongo, mas o typeorm tem suporte, ao mongo então vou utilizar ele mesmo
+
+Para isso vou atualizar o nosso ormconfig.json.
+
+e vou colocar outra configuração de banco semelhante ao do postgre, então vou colocar as duas configurações dentro de um array.
+
+em shared/infra/http/typeorm/index.ts
+
+as conexões devem estar no plural porque agora são duas
+
+yarn add mongodb
+
+mkdir src/modules/notifications
+mkdir src/modules/notifications/services
+mkdir src/modules/notifications/repositories
+mkdir src/modules/notifications/infra
+mkdir src/modules/notifications/infra/typeorm
+mkdir src/modules/notifications/infra/typeorm/schemas
+mkdir src/modules/notifications/dtos
+
+touch src/modules/notifications/infra/typeorm/schemas/Notification.ts
+touch src/modules/notifications/repositories/INotificationsRepository.ts
+touch src/modules/notifications/dtos/ICreateNotificationDTO.ts
+
+mkdir src/modules/notifications/infra/typeorm/repositories
+
+touch src/modules/notifications/infra/typeorm/repositories/NotificationsRepository.ts
