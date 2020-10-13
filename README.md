@@ -685,3 +685,6 @@ touch src/modules/notifications/dtos/ICreateNotificationDTO.ts
 mkdir src/modules/notifications/infra/typeorm/repositories
 
 touch src/modules/notifications/infra/typeorm/repositories/NotificationsRepository.ts
+
+## Enviando notificações
+
