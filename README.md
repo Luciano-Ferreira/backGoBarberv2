@@ -694,3 +694,8 @@ mkdir src/modules/notifications/repositories/fakes/
 touch src/modules/notifications/repositories/fakes/FakeNotificationRepository.ts
 
 
+## Validando dados
+
+yarn add celebrate
+
+yarn add -D @types/hapi__joi
