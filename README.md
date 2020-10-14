@@ -709,3 +709,7 @@ touch .env.example
 
 ❯ git rm --cached ormconfig.json
 
+## class transformer
+yarn add class-transformer
+
+vamos utilizar classToClass para ligar as classes as tabelas do typeorm
