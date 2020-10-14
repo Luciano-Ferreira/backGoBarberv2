@@ -699,3 +699,13 @@ touch src/modules/notifications/repositories/fakes/FakeNotificationRepository.ts
 yarn add celebrate
 
 yarn add -D @types/hapi__joi
+
+## Variaveis ambiente
+
+touch .env
+yarn add dotenv
+
+touch .env.example
+
+❯ git rm --cached ormconfig.json
+
