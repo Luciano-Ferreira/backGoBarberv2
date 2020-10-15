@@ -12,12 +12,10 @@
       "@modules/*":["modules/*"],
       "@config/*":["config/*"],
       "@shared/*":["shared/*"],
-      "@mappers/*":["mappers/*"]
     },
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   }
 }

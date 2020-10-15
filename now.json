@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name":  "gobarber",
+  "builds": [
+    {"src": "/src/shared/infra/http/server.ts", "use": "@now/node-server"}
+  ],
+  "routes": [
+    {"src": "/(.*)", "dest": "/src/index.js"}
+  ],
+  "env": {
+    "APP_SECRET": "@task-app-secret",
+    "APP_WEB_URL": "@task-web-url",
+    "APP_API_URL": "@task-api-url"
+
+  }
+}

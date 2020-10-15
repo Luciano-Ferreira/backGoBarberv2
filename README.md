@@ -713,3 +713,12 @@ touch .env.example
 yarn add class-transformer
 
 vamos utilizar classToClass para ligar as classes as tabelas do typeorm
+
+## Email amazon SES
+sudo yarn global add now
+
+touch now.json
+
+touch src/config/mail.ts
+
+touch src/shared/container/providers/MailProvider/implementatios/SESMailProvider.ts
