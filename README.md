@@ -722,3 +722,9 @@ touch now.json
 touch src/config/mail.ts
 
 touch src/shared/container/providers/MailProvider/implementatios/SESMailProvider.ts
+
+## Organizando o container
+
+❯ touch src/shared/container/providers/MailProvider/index.ts
+
+touch src/shared/container/providers/MailTemplateProvider/index.ts

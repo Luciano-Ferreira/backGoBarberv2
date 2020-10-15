@@ -11,11 +11,12 @@
     "paths": {
       "@modules/*":["modules/*"],
       "@config/*":["config/*"],
-      "@shared/*":["shared/*"],
+      "@shared/*":["shared/*"]
     },
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "exclude": ["jest.config.js", "node_modules", "prettier.config.js", "coverage"]
 }
