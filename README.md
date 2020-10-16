@@ -728,3 +728,18 @@ touch src/shared/container/providers/MailProvider/implementatios/SESMailProvider
 ❯ touch src/shared/container/providers/MailProvider/index.ts
 
 touch src/shared/container/providers/MailTemplateProvider/index.ts
+
+## Upload de arquivos para o amazon S3
+
+Amazon S3 = CDN (Content Delivery Network)
+
+Escala vertical - Aumenta recursos
+Escala horizontal - Cria um novo servidor (distribuição de carga)
+
+touch src/shared/container/providers/StorageProvider/implementations/S3StorageProvider.ts
+
+revisar controllers
+
+touch src/config/cache.ts
+
+yarn add mime
