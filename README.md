@@ -786,3 +786,5 @@ touch src/config/cache.ts
 
 redis GUI
 
+## Cache lista de providers
+
