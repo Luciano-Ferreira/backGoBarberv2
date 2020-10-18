@@ -745,6 +745,7 @@ touch src/config/cache.ts
 yarn add mime
 
 
+
 # Cache e segurança
 
 ## Configurando  cache
