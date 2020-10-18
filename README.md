@@ -788,3 +788,4 @@ redis GUI
 
 ## Cache lista de providers
 
+## Invalidando cache
