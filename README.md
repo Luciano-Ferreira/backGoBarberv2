@@ -743,3 +743,45 @@ revisar controllers
 touch src/config/cache.ts
 
 yarn add mime
+
+
+# Cache e segurança
+
+## Configurando  cache
+
+Redis
+
+TABELA
+
+chave e valor
+
+{
+  "appointmnts-list-o8er1238934uy12893712-05-03-2020"
+}
+
+docker run --name redis -p 6379:6379 -d -t redis:alpine
+
+docker start redis
+
+docker ps
+
+vou utilizar ioredis como driver
+
+yarn add ioredis
+yarn add @types/ioredis -D
+
+mkdir src/shared/container/providers/CacheProvider
+mkdir src/shared/container/providers/CacheProvider/implementations
+mkdir src/shared/container/providers/CacheProvider/fakes
+mkdir src/shared/container/providers/CacheProvider/models
+
+touch src/shared/container/providers/CacheProvider/models/ICacheProvider.ts
+
+touch src/shared/container/providers/CacheProvider/implementations/RedisCacheProvider.ts
+
+touch src/shared/container/providers/CacheProvider/index.ts
+
+touch src/config/cache.ts
+
+redis GUI
+
