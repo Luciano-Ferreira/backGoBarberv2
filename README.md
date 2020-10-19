@@ -799,3 +799,17 @@ Alterei todos os controllers dos appointments para ver se resolvia o erro de cri
 ## Refatorando testes
 
 touch src/shared/container/providers/CacheProvider/fakes/FakeCacheProvider.ts
+
+## Express rate limit
+
+Brute Force
+
+yarn add rate-limiter-flexible
+
+
+mkdir src/shared/infra/http/middlewares
+touch src/shared/infra/http/middlewares/rateLimiter.ts
+
+yarn add redis
+
+yarn add @types/redis
