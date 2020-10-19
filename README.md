@@ -795,3 +795,7 @@ datadog sw de monitoramento de querys
 ## Testando controllers appointments
 
 Alterei todos os controllers dos appointments para ver se resolvia o erro de criação de agendamento. para ver se os erros são no controllers
+
+## Refatorando testes
+
+touch src/shared/container/providers/CacheProvider/fakes/FakeCacheProvider.ts
