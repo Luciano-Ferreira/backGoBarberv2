@@ -789,3 +789,5 @@ redis GUI
 ## Cache lista de providers
 
 ## Invalidando cache
+
+datadog sw de monitoramento de querys
