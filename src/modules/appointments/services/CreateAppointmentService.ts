@@ -50,6 +50,7 @@ class CreateAppointmentService {
 
     const findAppointInSameDate = await this.appointmentsRepository.findByDate(
       appointmentDate,
+      provider_id,
     );
 
     if (findAppointInSameDate) {
