@@ -831,4 +831,4 @@ Eager loading
 
 ## Organizando imsomnia
 
-<img src="confImsomnia.png" alt="confImsomnia">
+<img src="github/confImsomnia.png" alt="confImsomnia">
