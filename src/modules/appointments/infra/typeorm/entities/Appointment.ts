@@ -25,7 +25,9 @@ class Appointment {
   @Column()
   user_id: string;
 
-  @ManyToOne(() => User)
+  // eager: automaticamente quando eu trazer os dados de um appointments ele vai trazer o usuários
+  // lazy: permite carregar os dados da variavel
+  @ManyToOne(() => User, { eager: true })
   @JoinColumn({ name: 'user_id' })
   user: User;
 

@@ -818,4 +818,11 @@ yarn add @types/redis
 
 ## Dias indisponíveis no mês
 
+## Clientes dos agendamentos
 
+- eager: automaticamente quando eu trazer os dados de um appointments ele vai trazer o usuários
+- lazy: permite carregar os dados da variavel
+
+Eager loading
+
+10 (user_id, user_id)
