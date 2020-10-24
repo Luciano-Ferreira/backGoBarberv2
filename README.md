@@ -829,3 +829,6 @@ Eager loading
 
 ## Serialização no cache
 
+## Organizando imsomnia
+
+<img src="confImsomnia.png" alt="confImsomnia">
