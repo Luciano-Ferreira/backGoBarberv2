@@ -4,6 +4,7 @@ import IAppointmentRepository from '@modules/appointments/repositories/IAppointm
 import ICreateAppointmentDTO from '@modules/appointments/dtos/ICreateAppointmentDTO';
 import IFindAllInMonthFromProviderDTO from '@modules/appointments/dtos/IFindAllInMonthFromProviderDTO';
 import IFindAllInDayFromProviderDTO from '@modules/appointments/dtos/IFindAllInDayFromProviderDTO';
+
 import Appointment from '@modules/appointments/infra/typeorm/entities/Appointment';
 
 class AppointmentsRepository implements IAppointmentRepository {
@@ -59,7 +60,7 @@ class AppointmentsRepository implements IAppointmentRepository {
         provider_id,
         date: Raw(
           dateFieldName =>
-            `to_char(${dateFieldName}, 'MM-YYYY') = '${parsedDay}-${parsedMonth}-${year}'`,
+            `to_char(${dateFieldName}, 'DD-MM-YYYY') = '${parsedDay}-${parsedMonth}-${year}'`,
         ),
       },
       relations: ['user'],

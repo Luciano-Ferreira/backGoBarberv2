@@ -1,12 +1,12 @@
 import { getRepository, Repository, Not } from 'typeorm';
 
+import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import ICreateUserDTO from '@modules/users/dtos/ICreateUserDTO';
-import IUserRepository from '@modules/users/repositories/IUsersRepository';
 import IFindAllProvidersDTO from '@modules/users/dtos/IFindAllProvidersDTO';
 
 import User from '../entities/User';
 
-class UsersRepository implements IUserRepository {
+class UsersRepository implements IUsersRepository {
   private ormRepository: Repository<User>;
 
   constructor() {
@@ -20,11 +20,8 @@ class UsersRepository implements IUserRepository {
   }
 
   public async findByEmail(email: string): Promise<User | undefined> {
-    // const user = await this.ormRepository.findOne(email);
     const user = await this.ormRepository.findOne({
-      where: {
-        email,
-      },
+      where: { email },
     });
 
     return user;
@@ -48,12 +45,8 @@ class UsersRepository implements IUserRepository {
     return users;
   }
 
-  public async create({
-    name,
-    email,
-    password,
-  }: ICreateUserDTO): Promise<User> {
-    const appointment = this.ormRepository.create({ name, email, password });
+  public async create(userData: ICreateUserDTO): Promise<User> {
+    const appointment = this.ormRepository.create(userData);
 
     await this.ormRepository.save(appointment);
 
