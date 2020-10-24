@@ -826,3 +826,6 @@ yarn add @types/redis
 Eager loading
 
 10 (user_id, user_id)
+
+## Serialização no cache
+
