@@ -2,11 +2,11 @@ import { startOfHour, isBefore, getHours, format } from 'date-fns';
 import { injectable, inject } from 'tsyringe';
 
 import AppError from '@shared/errors/AppError';
-import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
-import Appointment from '@modules/appointments/infra/typeorm/entities/Appointment';
 
-import IAppointmentsRepository from '@modules/appointments/repositories/IAppointmentsRepository';
+import ICacheProvider from '@shared/container/providers/CacheProvider/models/ICacheProvider';
 import INotificationsRepository from '@modules/notifications/repositories/INotificationsRepository';
+import Appointment from '../infra/typeorm/entities/Appointment';
+import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
 
 interface IRequest {
   provider_id: string;
@@ -35,7 +35,7 @@ class CreateAppointmentService {
     const appointmentDate = startOfHour(date);
 
     if (isBefore(appointmentDate, Date.now())) {
-      throw new AppError("You can't create an appointment on a past date");
+      throw new AppError("You can't create an appointment on a past date.");
     }
 
     if (user_id === provider_id) {
@@ -44,16 +44,16 @@ class CreateAppointmentService {
 
     if (getHours(appointmentDate) < 8 || getHours(appointmentDate) > 17) {
       throw new AppError(
-        'You cant only create appointments beetween 8am and 5pm',
+        'You can only create appointments between 8am and 5pm',
       );
     }
 
-    const findAppointInSameDate = await this.appointmentsRepository.findByDate(
+    const findAppointmentInSameDate = await this.appointmentsRepository.findByDate(
       appointmentDate,
       provider_id,
     );
 
-    if (findAppointInSameDate) {
+    if (findAppointmentInSameDate) {
       throw new AppError('This appointment is already booked');
     }
 
@@ -67,7 +67,7 @@ class CreateAppointmentService {
 
     await this.notificationsRepository.create({
       recipient_id: provider_id,
-      content: `Novo agendamento para ${dateFormatted}`,
+      content: `Novo agendamento para dia ${dateFormatted}`,
     });
 
     console.log(
