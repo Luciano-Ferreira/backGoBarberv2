@@ -1,5 +1,7 @@
 # back-end-GoBarber-v2
 
+
+
 ## 🚀 Technologies
 
 - [Node.js](https://nodejs.org/en/)
@@ -15,5 +17,6 @@
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
 - [EditorConfig](https://editorconfig.org/)
+- [axios](https://github.com/axios/axios)
 
 I created a <a href="https://www.notion.so/Back-end-Gobarberv2-1214568a8b064613bc59cdc259876d8b" target="_blank">report</a> where I mention all the commits and explain what was done in each one
