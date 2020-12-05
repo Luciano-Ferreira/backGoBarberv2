@@ -10,21 +10,21 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ```bash
 # Clone este repositório
-$ git clone <https://github.com/tgmarinho/nlw1>
+$ git clone <https://github.com/Luciano-Ferreira/backGoBarberv2>
 
 # Acesse a pasta do projeto no terminal/cmd
-$ cd nlw1
+$ cd backGoBarberv2
 
 # Vá para a pasta server
 $ cd server
 
 # Instale as dependências
-$ npm install
+$ yarn
 
 # Execute a aplicação em modo de desenvolvimento
-$ npm run dev:server
+$ yarn dev:server
 
-# O servidor inciará na porta:3333 - acesse <http://localhost:3333>
+# O servidor iniciará na porta:3333 - acesse <http://localhost:3333>
 ```
 
 
