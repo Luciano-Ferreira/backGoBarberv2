@@ -51,6 +51,9 @@ I created a <a href="https://www.notion.so/Back-end-Gobarberv2-1214568a8b064613b
 ---
 ### Autor
 ---
+<div class="border circle p-3" style="width: 100px; height: 100px;">
+  .circle
+</div>
 
 <a href="https://github.com/Luciano-Ferreira">
  <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/46464433?s=460&u=ab72001584ad39e758f5cc92ce25dad33085a20a&v=4" width="100px" alt=""/>
