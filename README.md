@@ -47,3 +47,15 @@ $ yarn dev:server
 - [axios](https://github.com/axios/axios)
 
 I created a <a href="https://www.notion.so/Back-end-Gobarberv2-1214568a8b064613bc59cdc259876d8b" target="_blank">report</a> where I mention all the commits and explain what was done in each one
+
+
+### Autor
+---
+
+<a href="https://github.com/Luciano-Ferreira">
+ <img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/46464433?s=460&u=ab72001584ad39e758f5cc92ce25dad33085a20a&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Luciano Ferreira</b></sub></a> <a href="https://github.com/Luciano-Ferreira" title="Luciano">🚀</a>
+
+
+by Luciano Ferreira.
