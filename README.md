@@ -61,6 +61,6 @@ I created a <a href="https://www.notion.so/Back-end-Gobarberv2-1214568a8b064613b
  <br />
  <sub>By <b>Luciano Ferreira</b></sub></a> <a href="https://github.com/Luciano-Ferreira" title="Luciano">🚀</a>
 
-[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/luciano-silva-82194b163/)](https://www.linkedin.com/in/luciano-silva-82194b163/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Luciano-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/luciano-silva-82194b163/)](https://www.linkedin.com/in/luciano-silva-82194b163/) 
 [![Gmail Badge](https://img.shields.io/badge/-luciano2023silva@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:luciano2023silva@gmail.com)](mailto:luciano2023silva@gmail.com)
 
