@@ -1,6 +1,7 @@
 import path from 'path';
 import crypto from 'crypto';
 import multer, { StorageEngine } from 'multer';
+import DiskStorageProvider from '@shared/container/providers/StorageProvider/implementations/DiskStorageProvider';
 
 const tmpFolder = path.resolve(__dirname, '..', '..', 'tmp');
 
@@ -15,7 +16,9 @@ interface IUploadConfig {
   };
 
   config: {
-    disk: {};
+    disk: {
+      driver: DiskStorageProvider;
+    };
     aws: {
       bucket: string;
     };
