@@ -15,8 +15,6 @@ $ git clone https://github.com/Luciano-Ferreira/backGoBarberv2.git
 # Acesse a pasta do projeto no terminal/cmd
 $ cd backGoBarberv2
 
-# Vá para a pasta server
-$ cd server
 
 # Instale as dependências
 $ yarn
