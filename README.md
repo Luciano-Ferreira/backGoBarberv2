@@ -3,7 +3,7 @@
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Docker](https://www.docker.com/get-started). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 ### 🎲 Rodando o Back End (servidor)
@@ -43,5 +43,6 @@ $ yarn dev:server
 - [Prettier](https://prettier.io/)
 - [EditorConfig](https://editorconfig.org/)
 - [axios](https://github.com/axios/axios)
+- [Docker](https://www.docker.com/get-started)
 
 Eu criei um <a href="https://www.notion.so/Back-end-Gobarberv2-1214568a8b064613bc59cdc259876d8b" target="_blank">relatório</a> onde menciono cada mudança alterada em cada commit!
